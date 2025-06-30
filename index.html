@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boring Money - News Sitemap</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .sitemap-link {
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 20px 0;
+        }
+        .sitemap-link:hover {
+            background: #2980b9;
+        }
+        .info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Boring Money - News Sitemap</h1>
+    
+    <div class="info">
+        <p>This page hosts the Google News sitemap for <a href="https://boringmoney.in" target="_blank">boringmoney.in</a>.</p>
+    </div>
+    
+    <p>The news sitemap is automatically generated from the latest articles and updated whenever new content is published.</p>
+    
+    <a href="/news-sitemap.xml" class="sitemap-link">View News Sitemap</a>
+    
+    <p><small>Last updated: <span id="timestamp"></span></small></p>
+    
+    <script>
+        document.getElementById('timestamp').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html> 
