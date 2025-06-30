@@ -40,7 +40,7 @@ jobs:
           pip install -r requirements.txt
       - name: Generate news sitemap
         run: |
-          python generate-sitemap.py
+          python3 generate-sitemap.py
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
