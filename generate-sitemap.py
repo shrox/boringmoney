@@ -12,10 +12,10 @@ import os
 
 def fetch_substack_posts():
     """Fetch posts from Substack RSS feed using requests and manual parsing"""
-    rss_url = "https://boringmoney.substack.com/feed"
+    rss_url = "https://boringmoney.in/feed"
     
     try:
-        response = requests.get(rss_url, timeout=30)
+        response = requests.get(rss_url, timeout=30, allow_redirects=True)
         response.raise_for_status()
         
         # Parse RSS XML manually
